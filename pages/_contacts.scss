@@ -1,0 +1,71 @@
+.map{
+    padding-top: 16rem;
+    &__wrapper{
+        text-align: center;
+
+        iframe{
+            
+        }
+    }
+}
+
+//getintouch start
+
+.getintouch{
+    background-color: $clr-gold;
+    margin-top: 2rem;
+
+    &__wrapper{
+        
+        h1{
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            font-size: 5rem;
+        }
+    }
+
+    &__form{
+        text-align: center;
+        padding-bottom: 5rem;
+        @include grid(1, 0);
+       
+        &__formname{
+            text-align: left;
+            @include grid(2, 0);
+
+            }
+        
+            input[type=text]{
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                border: none;
+                margin: 8px 1rem;
+                width: 34.8rem;
+                font-size: 1.5rem;
+            }  
+
+            input[type=email], input[type=subject]{
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                border: none;
+                margin: 8px 1rem;
+                width: 72rem;
+                font-size: 1.5rem;
+            }
+            textarea{
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                border: none;
+                margin: 8px 1rem;
+                font-size: 1.5rem;
+                height: 15rem;
+                width: 72rem;
+            } 
+            a{
+                margin-top: .5rem;
+            }
+    }   
+}
+
+//getintouch end
