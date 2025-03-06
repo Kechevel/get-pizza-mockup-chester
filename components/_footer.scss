@@ -1,0 +1,28 @@
+//footer start
+.footer{
+
+    img{
+        padding: 3rem 0;
+    }
+    
+    &__wrapper{
+        text-align: center;
+
+        img{
+            transform: translateX(-15px)
+        }
+    }
+
+    &__text{
+        @include grid(3, 0);
+        padding: 2rem 20rem 6rem 20rem;
+    }
+
+    &__copyright{
+        color: $clr-red;
+        padding-bottom: 3rem;
+    }
+}
+
+
+//footer end

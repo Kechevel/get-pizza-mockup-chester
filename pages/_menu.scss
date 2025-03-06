@@ -1,0 +1,95 @@
+.menubanner{
+    padding-top: 42rem;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url("/img/menubanner.jpg");
+    background-size: cover;
+
+    &__wrapper{
+        padding: 0 25rem;
+        h1{
+            color: $clr-light;
+            font-size: 7rem;
+            text-align: center;
+            line-height: 6rem;
+        }
+    }
+}
+
+.menuoffer{
+    padding: 2rem 0;
+    background-color: $clr-blue;
+    color: $clr-light;
+    text-align: center;
+
+    &__foodnavigation{
+        margin: 2rem auto;
+        padding: 0 30rem;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            background-color: $clr-gold;
+            width: 78rem;
+            border-radius: 2rem;
+
+            li{
+                font-weight: 650;
+                padding: 0 5rem;
+                border-right: 1px solid $clr-light;
+
+                &:last-child{
+                    border-right: none;
+                }
+
+                a{
+                    color: $clr-blue;
+
+                    
+                }
+                .activemenu{
+                    color: $clr-red;
+                }
+            }
+        }
+    }
+
+    &__items{
+        margin-top: 4rem;
+    }
+
+    &__showcasetop, &__showcasebottom{
+        @include grid(3, 0);
+        padding: 0 30rem;
+
+        img{
+            width: 12rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        &__item{
+            border: 1px solid $clr-light;
+            border-radius: 1rem;
+            width: 25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            li{
+                i{
+                    color: $clr-gold;
+                }
+            }
+        }
+
+        .btn{
+            border: 1px solid $clr-red;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

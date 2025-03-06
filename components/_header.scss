@@ -1,0 +1,50 @@
+
+.header{
+    position: fixed;
+    font-weight: 600;
+    padding-top: 2rem; 
+    width: 100%;
+    z-index: 9999;
+    background-color: $clr-light;
+
+    &__wrapper{
+        @include centerBetween;
+        align-items: center;
+        padding: 1rem 0;
+
+        img{
+            transform: translateY(-10px);
+            width: 15rem;
+        }
+        
+        ul{
+            display: flex;
+            li{
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    &__news__wrapper{
+        color: $clr-red;
+        text-align: center;
+        border-top: 1px solid $clr-l-gray;
+        border-width: 100%;
+        padding: .8rem 0;
+        
+            h4{
+                font-weight: 600;
+                font-size: 12px;
+                i{
+                    padding: 0 1rem;
+            }
+        }
+    }
+
+    &__active{
+        color: $clr-red!important;
+    }
+}
+
+
+

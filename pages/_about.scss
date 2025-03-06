@@ -1,0 +1,108 @@
+.aboutbanner{
+    padding-top: 18rem;
+
+    &__wrapper{
+        @include grid(2, 6rem);
+        padding:0 0rem;
+
+        iframe{
+            border: none;
+        }
+    }
+
+    &__text{
+        h1{
+            font-size: 4rem;
+            width: 42rem;
+            color: $clr-red;
+            line-height: 4rem;
+            margin-bottom: 2rem;
+            padding-top: 13rem;
+        }
+    }
+}
+
+//story start
+
+.story{
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+
+    h2{
+        font-size: 3rem
+    }
+
+    &__years{
+        @include grid(2, 3rem);
+        padding-top: 4rem;
+        align-items: center;
+
+        ul{
+            li{
+                padding: 1rem 6rem;
+                
+                a{  
+                    
+                    i{  
+                        color: $clr-light;
+                        width: 42rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        img{
+            border-radius: 3rem;
+        }
+
+        .btn1{
+            display: block;
+            padding: 1rem;
+            color: $clr-light;
+            width: 50rem;
+            border-radius: none;
+            background-color: $clr-red;
+            &:hover{
+                background: darken($clr-red, 10);
+            }
+        }
+    }
+}
+
+
+
+//story end
+
+//offer start and end in _home.scss
+
+//clients start
+
+.clients{
+    &__wrapper{
+        text-align: center;
+        padding: 4rem 0;
+
+        img{
+            margin-top: 2rem;
+            border-radius: 50rem;
+            width: 9rem;
+        }
+    }
+
+    &__items{
+        padding: 0 35rem;
+
+        h2{
+            font-size: 3rem;
+        }
+
+        p{
+            padding: 2rem 0;
+        }
+      
+    }
+}
+
+//clients end

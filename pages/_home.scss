@@ -1,0 +1,165 @@
+//banner start
+
+.banner{
+    background-color: $clr-peach;
+    padding-top: 15rem; 
+
+    &__wrapper{
+        @include grid (2,5rem);
+        align-items: center;
+        padding: 0 18rem;
+    }
+
+    &__text{
+        text-align: justify;
+        img{
+            height: auto;
+            width: auto;
+        }
+        
+        h1{
+            font-size: 5rem;
+            line-height: 5rem;
+            margin-bottom: 5rem;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+
+    img{
+        max-width: 50rem;
+    }
+}
+
+//banner end
+//welcome start
+
+.welcome{
+    height: 60vh;
+
+    &__wrapper{
+        @include grid(2,10rem);
+        grid-template-columns: .5fr 1fr;
+        padding: 0 22rem;
+        align-items: center;
+    }
+
+    &__text{
+        padding-top: 12rem;
+
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            padding: 1rem 0;
+        }
+        span{
+            color: $clr-red;
+            font-weight: 520;
+        }
+    }
+
+
+&__images{
+    position: relative;
+    display: inline;
+
+    img{
+        max-width: 30rem;
+        border: 8px solid $clr-dark;
+        border-radius: 1.5rem;
+        
+    }
+    &__overlap{
+        position: absolute;
+        left: 4rem;
+        top: 17rem;
+    }
+}
+    
+
+}
+
+//welcome end
+
+//offer start
+
+.offer{
+    padding: 4rem 0;
+    background-color: $clr-blue;
+    color: $clr-light;
+    text-align: center;
+
+    &__items{
+        h2{
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__foodnavigation{
+        margin-bottom: 4rem;
+
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                padding: 0 1rem;
+
+                .activefood{
+                    img{
+                        border: 3px double $clr-blue;
+                        border-radius: 4rem;
+                        outline: 2px solid $clr-gold;
+                       
+                    }
+                }
+            }
+        }
+    
+        img{
+            width: 7rem;
+        }
+    }
+
+    &__showcase{
+        @include grid(2, 2rem);
+        padding: 0 34rem;
+
+        img{
+            width: 12rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        &__item1, &__item2{
+            border: 1px solid $clr-light;
+            border-radius: 1rem;
+            width: 35rem;
+        }
+
+        ul{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            li{
+                i{
+                    color: $clr-gold;
+                }
+            }
+        }
+
+        .btn{
+            border: 1px solid $clr-red;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+        
+
+//offer end
+
+
